@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.awesomeurch.batterymanager.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/intro"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dip"
+            android:textAlignment="center"
+            android:paddingRight="5dip"
+            android:paddingTop="15dip"
+            android:paddingBottom="15dip"
+            android:text="@string/first_intro"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/line1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/intro">
+
+        <LinearLayout
+            android:id="@+id/uc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:background="@drawable/custom_border">
+
+            <TextView
+                android:id="@+id/battery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dip"
+                android:paddingTop="5dip"
+                android:text="@string/battery_level"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <ProgressBar
+                android:id="@+id/pb"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:progressDrawable="@layout/progress_bar_states"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:background="@drawable/custom_border">
+
+            <TextView
+                android:id="@+id/hours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dip"
+                android:paddingTop="5dip"
+                android:paddingRight="5dip"
+                android:text="@string/hours_remaining"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/timeEst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="50sp"
+                android:layout_marginTop="40dp"
+                android:text="@string/time"
+                android:layout_gravity="center"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/extras"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line1">
+        <TextView
+            android:id="@+id/report1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dip"
+            android:textAlignment="center"
+            android:paddingRight="5dip"
+            android:paddingTop="10dip"
+            android:paddingBottom="10dip"
+            android:text="@string/loading"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/report3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dip"
+            android:textAlignment="center"
+            android:paddingRight="5dip"
+            android:paddingTop="15dip"
+            android:paddingBottom="5dip"
+            android:text="@string/stop_instruction"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="18sp" />
+        <!--
+        <TextView
+            android:id="@+id/report3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dip"
+            android:textAlignment="textStart"
+            android:paddingRight="5dip"
+            android:paddingTop="10dip"
+            android:paddingBottom="10dip"
+            android:text="@string/loading"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+
+        app:layout_constraintTop_toBottomOf="@+id/extras">
+
+            <Button
+                android:id="@+id/run_app"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingBottom="5dip"
+                android:paddingEnd="10dip"
+                android:paddingLeft="5dip"
+                android:paddingRight="5dip"
+                android:paddingStart="10dip"
+                android:paddingTop="5dip"
+                android:textColor="@android:color/white"
+                android:text="@string/background_apps" />
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

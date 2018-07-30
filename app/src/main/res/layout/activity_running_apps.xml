@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.awesomeurch.batterymanager.RunningAppsActivity">
+
+    <TextView
+        android:id="@+id/report3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dip"
+        android:textAlignment="center"
+        android:paddingRight="5dip"
+        android:paddingTop="15dip"
+        android:paddingBottom="5dip"
+        android:text="@string/press_hold"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="16sp" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/report3"
+        android:id="@+id/app_list">
+
+    </ListView>
+
+</android.support.constraint.ConstraintLayout>

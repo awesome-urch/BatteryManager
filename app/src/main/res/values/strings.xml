@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Battery Life Estimator</string>
+    <string name="battery_level">Battery Level</string>
+    <string name="hours_remaining">Hours Remaining</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="run_app_name">Running App</string>
+    <string name="loading">Loading...</string>
+    <string name="time">2h0m</string>
+    <string name="first_intro">Battery Life Estimation App designed by Awesome Urch</string>
+    <string name="background_apps">Apps Running in Background</string>
+    <string name="stop_instruction">Click the button below to view apps running in background</string>
+    <string name="press_hold">Press and hold on any of the Apps to stop the selected App from running in background</string>
+</resources>
